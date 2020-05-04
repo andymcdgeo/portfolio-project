@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>Andy's Blog</title>
+    <title>Andy's Publications</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/album/">
 
@@ -75,18 +75,20 @@
 
 <main role="main">
     <div class="container">
-    <h1 class="text-center pt-5">Blog</h1>
+    <h1 class="text-center pt-5">Publications</h1>
     <br/>
     <br/>
-    <h2>Latest Posts</h2>
-    <hr / >
 
-    {% for blog in blog.all %}
-    <a href="{% url 'detail' blog.id %}"><h3>{{ blog.title }}</h3></a>
-    {{ blog.publication_date_short }} <br/>
-    <img class="img-fluid" src="{{ blog.image.url }}" height = 500, width = 500>
+
+    {% for publication in publications.all %}
+    <b>
+
+    <h2>{{ publication.publication_date_short }}</h2>
+    <a href="{{ publication.pub_doi }}">{{ publication.pub_title }}</b> </a> <br/>
+    {{ publication.authors }}<br/>
+    {{ publication.pub_type }} | {{ publication.pub_body}}<br/>
     <br/>
-    <p>{{ blog.summary }}</p>
+    <hr/>
 
     {% endfor %}
 
