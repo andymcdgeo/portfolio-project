@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.7em;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0;
+}
+
+
+
+/* Utility Classes */
+.container {
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.heading-underline {
+    background-color: #dfdfdf;
+    height: 2px;
+    width: 100px;
+    margin: 20px auto;
+}
+
+.section-heading {
+    padding-bottom: 10px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.bg-color {
+    background: #f5f5f5;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background-color: #333333;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #00566d;
+    color: #fff;
+}
+
+.boxes {
+    padding: 20px 0;
+}
+
+/* Navigation Menu */
+#navbar {
+    overflow: auto;
+    border-bottom: #dfdfdf 1px solid;
+}
+
+#navbar h1 {
+    float: left;
+    padding-top: 20px;
+}
+
+#navbar ul {
+    float: right;
+    list-style: none;
+    font-size: 14px;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#navbar ul li a:hover{
+    color: #00566d;
+}
+
+#navbar ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 20px;
+    left: 0px;
+    background-color: #00566d;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.6s ease-in-out 0s;
+}
+
+#navbar ul li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* Main Image */
+#front-page-image {
+    background: url('/static/quiraing.jpg') no-repeat center center/cover;
+    height: 600px;
+}
+
+/* About Me Section */
+#about-me {
+    padding-top: 50px;
+}
+
+#about-me .about-left {
+    float: left;
+    width: 70%;
+    text-align: center;
+    padding-right: 50px;
+}
+
+#about-me .about-right {
+    display: block;
+    float: right;
+    width: 30%;
+    padding: 20px;
+}
+
+#about-me .about-right img {
+    border-radius: 50%;
+}
+
+/* Contact Form */
+#contact {
+    text-align: center;
+}
+
+#contact .form-group {
+    margin-bottom: 20px;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact input, #contact textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px #dfdfdf solid;
+    font-size: 14px;
+}
+
+#contact textarea {
+    height: 200px;
+}
+
+#contact input:focus, #contact textarea:focus {
+    outline: none;
+    border-color: #00566d;
+}
+
+/* Footer */
+#main-footer {
+    color: #fff;
+    background-color: #333333;
+    height: 175px;
+    text-align: center;
+    padding: 20px;
+    /* margin-top: 50px; */
+    font-size: 14px;
+}
+
+.fab, .fas {
+    opacity: 0.7;
+    padding: 10px;
+}
+
+.fab:hover, .fas:hover {
+    opacity: 1;
+}
