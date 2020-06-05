@@ -7,6 +7,7 @@
 html, body {
     font-family: 'Rubik', sans-serif;
     line-height: 1.7em;
+    color: #232323;
 }
 
 a {
@@ -18,7 +19,9 @@ p {
     margin: 10px 0;
 }
 
-
+h2, h3 {
+    padding-bottom: 20px;
+}
 
 /* Utility Classes */
 .container {
@@ -33,6 +36,13 @@ p {
     height: 2px;
     width: 100px;
     margin: 20px auto;
+}
+
+.page-heading {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .section-heading {
@@ -67,7 +77,7 @@ p {
 /* Navigation Menu */
 #navbar {
     overflow: auto;
-    border-bottom: #dfdfdf 1px solid;
+    /* border-bottom: #dfdfdf 1px solid; */
 }
 
 #navbar h1 {
@@ -97,23 +107,6 @@ p {
     color: #00566d;
 }
 
-#navbar ul li a::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 20px;
-    left: 0px;
-    background-color: #00566d;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.6s ease-in-out 0s;
-}
-
-#navbar ul li a:hover::before {
-    visibility: visible;
-    transform: scaleX(1);
-}
 
 /* Main Image */
 #front-page-image {
@@ -144,6 +137,24 @@ p {
     border-radius: 50%;
 }
 
+/* Skills Section */
+#skills .skills-left {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+#skills .skills-right {
+    display: block;
+    float: right;
+    width: 50%;
+    text-align: center;
+}
+
+#skills ul {
+    list-style: none;
+}
+
 /* Contact Form */
 #contact {
     text-align: center;
@@ -172,6 +183,33 @@ p {
 #contact input:focus, #contact textarea:focus {
     outline: none;
     border-color: #00566d;
+}
+
+/* Publications */
+
+#publications .pub-title {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#publications .pub-type {
+    padding: 5px;
+    margin-right: 10px;
+    background-color: darkblue;
+    color: white;
+    font-size: 14px;
+    
+}
+
+#publications .pub-authors {
+    font-size: 14px;
+    margin: 0;
+}
+#publications .pub-details {
+    font-size: 14px;
 }
 
 /* Footer */

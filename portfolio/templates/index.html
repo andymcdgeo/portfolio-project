@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
     <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="{% static 'css/mobile.css' %}">
 </head>
 <body>
     <header>
@@ -15,7 +16,7 @@
             <div class="container">
                 <h1 class="site-header">Andy McDonald</h1>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a class="current" href="#">Home</a></li>
                     <li><a href="#">About Me</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="{% url 'allblogs' %}">Blog</a></li>
@@ -50,6 +51,27 @@
         <div class="container">
             <h2 class="section-heading">SKILLS</h2>
             <div class="heading-underline"></div>
+
+            <div class="skills-left">
+                <h3>Petrophysical</h3>
+                <ul>
+                    <li>Reservoir Rock Typing</li>
+                    <li>Saturation Height Modelling</li>
+                    <li>Curve Prediction Using Machine Learning</li>
+                    <li>Saturation Height Modelling</li>
+                </ul>
+            </div>
+
+            <div class="skills-right">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>HTML & CSS</li>
+                    <li>C#</li>
+                    <li>Django</li>
+                </ul>
+            </div>
+
         </div>
     </section>
 
@@ -64,7 +86,7 @@
         <div class="container">
             <h2 class="section-heading">CONTACT ME</h2>
             <div class="heading-underline"></div>
-            <p>Fill out the form below if you want to get in touch.</p>
+            <p>If you want to get in touch fill out the form below and hit submit.</p>
 
             <form action="">
                 <div class="form-group">
@@ -88,9 +110,10 @@
     <footer id="main-footer">
         <p>Feel free to check out my Github and LinkedIn pages or drop me an email.</p>
         <div class="social-links">
-        <i class="fab fa-github fa-2x"></i>
-        <i class="fab fa-linkedin fa-2x"></i>
-        <i class="fas fa-envelope fa-2x"></i>
+            <i class="fab fa-github fa-2x"></i>
+            <i class="fab fa-linkedin fa-2x"></i>
+            <i class="fab fa-researchgate fa-2x"></i>
+            <i class="fas fa-envelope fa-2x"></i>
         </div>
         <p>© Andy McDonald {% now "Y" %}</p>
     </footer>
