@@ -11,26 +11,50 @@
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="{% static 'css/mobile.css' %}">
 </head>
 <body>
-    <header>
+    <header class="hero">
         <nav id="navbar">
-            <div class="container">
-                <h1 class="site-header">Andy McDonald</h1>
-                <ul>
-                    <li><a class="current" href="#">Home</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="{% url 'allblogs' %}">Blog</a></li>
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="{% url 'publications' %}">Publications</a></li>
-                </ul>
-            </div>
+            <h1 class="site-header">Andy McDonald</h1>
+            <ul>
+                <li><a class="current" href="#">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="{% url 'allblogs' %}">Blog</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="{% url 'publications' %}">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
 
         <!-- Main Image -->
-        <div id="front-page-image">
+        <div class="front-page-image">
+            <!-- <h1>PETROPHYSICIST</h1> -->
+            
             <!-- <img src="{% static 'quirang.jpg' %}" alt="" height="300"> -->
         </div>
     </header>
+
+    <section class="about flex-columns">
+
+        <div class="row">
+            <div class="column">
+                <div class="column-1">
+                    <h2 class="section-heading">ABOUT ME</h2>
+                    <div class="heading-underline"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque laudantium explicabo corporis nihil quasi asperiores error aliquid rerum illum ab.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque laudantium explicabo corporis nihil quasi asperiores error aliquid rerum illum ab.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque laudantium explicabo corporis nihil quasi asperiores error aliquid rerum illum ab.</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="column-2">
+                    <img src="{% static 'andy.jpg' %}" alt="Andy">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
 
     <section id="about-me" class="boxes">
         <div class="container">
