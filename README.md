@@ -1,6 +1,8 @@
 # Personal Portfolio Website
 
-Currently in development.  
+This is my portfolio website, which is currently under development.  
 
-Backend: Django
+Backend: Django  
 Frontend: HTML & CSS
+
+Live Website: 
