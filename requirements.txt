@@ -1,4 +1,4 @@
-Django==2.2.13
+Django==2.2.21
 gunicorn==20.0.4
 lasio==0.25.1
 numpy==1.18.3
