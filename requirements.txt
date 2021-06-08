@@ -2,7 +2,7 @@ Django==2.2.13
 gunicorn==20.0.4
 lasio==0.25.1
 numpy==1.18.3
-Pillow==7.1.2
+Pillow==8.2.0
 pkg-resources==0.0.0
 psycopg2-binary==2.8.5
 pytz==2019.3
